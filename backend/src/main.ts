@@ -6,7 +6,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   app.enableCors({
-    origin: 'todo-angular-ad46.onrender.com', // Your Angular app URL
+    origin: 'https://todo-angular-ad46.onrender.com/', // Your Angular app URL
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   });
